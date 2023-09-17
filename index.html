@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="product-container">
+        <div class="product-form-container">
+            <div class="header">
+                <span>MULTIPLYING TWO NUMBERS</span>
+            </div>
+            <div class="body">
+                <form method="post" id="user-product-form">
+                    <label for="user-fnum">FIRST NUMBER</label>
+                    <input type="text" id="user-fnum" name="user-fnum" inputmode="numeric" oninput="blockFirstNumber()" autocomplete="off" required>
+                    <label for="user-snum">SECOND NUMBER</label>
+                    <input type="text" id="user-snum" name="user-snum" inputmode="numeric" oninput="blockSecondNumber()" autocomplete="off" required>
+                    <button type="submit" id="submit-product-button">RESULT</button>
+                </form>
+                <div id="output-product-container">
+                    Waiting For User Input...
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
